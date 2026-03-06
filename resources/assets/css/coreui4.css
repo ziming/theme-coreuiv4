@@ -119,12 +119,12 @@ a:hover {
 /* Select 2 + Select 2 multiple */
 .select2-container--bootstrap .select2-results__option--highlighted[aria-selected]{
     background-color: rgba(50, 31, 219, 0.5) !important;
-    color: #fff !important;
+    color: var(--bp-select2-option-color) !important;
 }
 
 .select2-container--bootstrap .select2-results__option[aria-selected=true] {
-    background-color: #7c69ef !important;
-    color: #fff !important;
+    background-color: var(--select2-selected-item-background) !important;
+    color: var(--select2-selected-item-color) !important;
 }
 
 .card,
@@ -286,10 +286,10 @@ table.dataTable.table-striped > tbody > tr:nth-of-type(2n+1):hover {
 
 form .select2.select2-container.select2-container--focus,
 form .select2.select2-container.select2-container--open {
-    background-color: #fff;
-    border: 1px solid var(--primary, #9080f1) !important;
-    box-shadow: 0 0 0 2px #e1dcfb;
-    color: #495057;
+    background-color: var(--bp-select2-focus-bg);
+    border: 1px solid var(--bp-select2-focus-border-color) !important;
+    box-shadow: var(--bp-select2-focus-box-shadow);
+    color: var(--bp-select2-focus-color);
     outline: 0;
     border-radius: 4px;
 }
